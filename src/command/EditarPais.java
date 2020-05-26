@@ -38,7 +38,6 @@ public class EditarPais implements Command {
 		pais = cs.carregar(pais.getId());
 		request.setAttribute("pais", pais);
 		view = request.getRequestDispatcher("AlterarPais.jsp");			
-		
 		view.forward(request, response);
 
 	}
